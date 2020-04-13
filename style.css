@@ -1,0 +1,11 @@
+body {
+	font-family: Lato;
+}
+
+a, a:visited, a:hover, a:active {
+  color: blue;
+}
+
+.contact > a {
+	text-decoration: none;
+}
