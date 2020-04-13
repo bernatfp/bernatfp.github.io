@@ -1,5 +1,6 @@
 body {
 	font-family: Lato;
+	margin-left: 30px;
 }
 
 h1 {
@@ -19,6 +20,9 @@ a, a:visited, a:hover, a:active {
 }
 
 @media all and (max-width: 767px) {
+	body {
+		margin-left: 10px;
+	}
     h1 {
 		font-size: 24px;
 	}
