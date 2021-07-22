@@ -10,4 +10,4 @@ I am committing to publishing the occasional post after a multi-year hiatus. I u
 
 ## Technical setup
 
-This site is statically hosted on [Github Pages](https://github.com/bernatfp/bernatfp.github.io) and built with [Jekyll](https://github.com/jekyll/jekyll).
+This site is statically [hosted](https://github.com/bernatfp/bernatfp.github.io) on [Github Pages](https://pages.github.com) and built with [Jekyll](https://github.com/jekyll/jekyll).
