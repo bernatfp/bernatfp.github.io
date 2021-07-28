@@ -1,22 +1,35 @@
 ---
 layout: default
 ---
-<h1>{{ site.title }}</h1>
-<h2>Pages</h2>
-<ul>
-    {% for page in site.pages %}
-        <a href="{{page.url}}"">{{page.title}}</a></li>
-    {% endfor %}
-</ul>
-<h2>Posts</h2>
-<ul>
-    {% for post in site.posts %}
-        <li>{{post.date | date_to_string}} <a href="{{post.url}}"">{{post.title}}</a></li>
-    {% endfor %}
-</ul>
-<p class="contact">
-    <a href="https://twitter.com/brnt"><img class="icon" src="assets/twitter.svg"></a>
-    <a href="mailto:contact@bernat.xyz"><img class="icon" src="assets/envelope.svg"></a>
-    <a href="https://www.linkedin.com/in/bernatfp/"><img class="icon" src="assets/linkedin-in.svg"></a>
-    <a href="https://www.github.com/bernatfp"><img class="icon" src="assets/github.svg"></a>
-</p>
+<div class="header">
+    <span class="title">{{ site.title }}</span>
+</div>
+<div class="container">
+    <div class="section">
+        <h2>Pages</h2>
+        <ul>
+            {% for page in site.pages %}
+                <a class="page" href="{{page.url}}"">{{page.title}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Posts</h2>
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                    <span class="page-date">{{post.date | date_to_string}}</span> 
+                    <a class="page" href="{{post.url}}"">{{post.title}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="section">
+        <p class="contact">
+            <a href="https://twitter.com/brnt"><img class="icon" src="assets/twitter.svg"></a>
+            <a href="mailto:contact@bernat.xyz"><img class="icon" src="assets/envelope.svg"></a>
+            <a href="https://www.linkedin.com/in/bernatfp/"><img class="icon" src="assets/linkedin-in.svg"></a>
+            <a href="https://www.github.com/bernatfp"><img class="icon" src="assets/github.svg"></a>
+        </p>
+    </div>
+</div>

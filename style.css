@@ -1,16 +1,6 @@
 body {
-	margin-left: 25%;
-	margin-right: 25%;
+	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	line-height: 1.9em;
-}
-
-h1 {
-	font-size: 32px;
-}
-
-p {
-	font-size: 18px;
 }
 
 ul {
@@ -19,7 +9,43 @@ ul {
 }
 
 a, a:visited, a:hover, a:active {
-  color: blue;
+  color: #76A991;
+  text-decoration: none;
+}
+
+.header {
+	background-color: #76A991;
+	box-shadow: inset 0 -20px 50px rgb(0, 0, 0, 0.1);
+}
+
+.title {
+	font-size: 2em;
+	font-weight: bold;
+	color: #ffffff;
+	display: inline-flex;
+	align-items: center;
+	margin-left: 25%;
+	height: 200px;
+}
+
+.container {
+	margin-left: 25%;
+	margin-right: 25%;
+	line-height: 1.9em;
+}
+
+.section {
+	margin-top: 50px;
+}
+
+a.page {
+	font-weight: 600;
+}
+
+.page-date {
+	padding-right: 1em;
+	font-weight: 500;
+	color: #CFCFCF;
 }
 
 .contact > a {
@@ -33,8 +59,9 @@ a, a:visited, a:hover, a:active {
 }
 
 @media all and (max-width: 767px) {
-	body {
+	.container, .title {
 		margin-left: 10px;
+		margin-right: 10px;
 	}
     h1 {
 		font-size: 24px;
