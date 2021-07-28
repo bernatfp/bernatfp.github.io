@@ -10,9 +10,15 @@
 
 	  gtag('config', 'UA-163684295-1');
 	</script>
-	<title>{{ site.title }}</title>
+	<title>
+		{% if page.title %}
+			{{page.title}} | {{site.title}}
+		{% else %}
+			{{site.title}}
+		{% endif %}
+	</title>
+	<meta name="description" content="Hey, I'm Bernat and this is my personal website.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/style.css" media="screen"/>
 </head>
 <body>

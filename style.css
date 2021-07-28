@@ -58,6 +58,10 @@ a.page {
 	width: 24px;
 }
 
+.content {
+	margin-bottom: 100px;
+}
+
 @media all and (max-width: 767px) {
 	.container, .title {
 		margin-left: 10px;
