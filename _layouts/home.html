@@ -7,20 +7,22 @@ layout: default
 <div class="container">
     <div class="section">
         <h2>Pages</h2>
-        <ul>
+        <ul class="nobullet">
             {% for page in site.pages %}
-                <a class="page" href="{{page.url}}"">{{page.title}}</a></li>
+            <li>
+                <a class="page" href="{{page.url}}"">{{page.title}}</a>
+            </li>
             {% endfor %}
         </ul>
     </div>
     <div class="section">
         <h2>Posts</h2>
-        <ul>
+        <ul class="nobullet">
             {% for post in site.posts %}
-                <li>
-                    <span class="page-date">{{post.date | date_to_string}}</span> 
-                    <a class="page" href="{{post.url}}"">{{post.title}}</a>
-                </li>
+            <li>
+                <span class="page-date">{{post.date | date_to_string}}</span> 
+                <a class="page" href="{{post.url}}"">{{post.title}}</a>
+            </li>
             {% endfor %}
         </ul>
     </div>

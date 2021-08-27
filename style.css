@@ -4,6 +4,10 @@ body {
 }
 
 ul {
+	padding-left: 30px;
+}
+
+ul.nobullet {
 	list-style-type: none;
 	padding-left: 0px;
 }
