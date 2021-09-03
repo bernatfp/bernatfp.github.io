@@ -30,6 +30,6 @@ Dune enables anyone with a basic understanding of SQL to leverage the transparen
 <span class="caption">The total value of assets locked in <a href="https://makerdao.com/">MakerDAO</a> has been steadily increasing (in $B)</span>
 </div>
 
-After shutting down my startup I knew that I wanted to go back to doing Product and help push the crypto space forward as part of a tightly-knit team where I can have plenty of opportunities to make huge impact. As a long-time [user](https://dune.xyz/bernat) of the product, I'm very excited to embark on this new journey.
+After shutting down my startup I knew that I wanted to go back to doing Product and help push the crypto space forward, as part of a tightly-knit team where I can have plenty of opportunities to make huge impact. As a long-time [user](https://dune.xyz/bernat) of the product, I'm very excited to embark on this new journey.
 
-*By the way, we're [hiring](https://dune.xyz/careers) across a number of Engineering and Product roles. Hit me up to learn more if you're interested*
+*By the way, we're [hiring](https://dune.xyz/careers) across a number of Engineering and Product roles. Hit me up to learn more if you're interested!*

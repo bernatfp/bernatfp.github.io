@@ -25,6 +25,10 @@ a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
+table {
+	border-spacing: 0;
+}
+
 .header {
 	background-color: #76A991;
 	box-shadow: inset 0 -20px 50px rgb(0, 0, 0, 0.1);
