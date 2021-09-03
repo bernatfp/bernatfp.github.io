@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dune Analytics"
-date:   2021-09-01
+date:   2021-09-03
 ---
 
 I'm delighted to announce I've joined the mighty team at [Dune Analytics](https://dune.xyz).
