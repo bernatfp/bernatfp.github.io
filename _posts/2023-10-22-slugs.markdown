@@ -74,4 +74,4 @@ While immutability is one of the design principles of the protocol, the Slugs dA
 
 That said, I hope that the protocol's embedded economic incentives motivate other dApp developers to build additional services on top of it, so the protocol can become more decentralized over time.
 
-Last, I want to thank Josh from Box Domains (a must, if you want a [truly native blockchain domain name](https://www.my.box/)) for helping me get the domain, Michael from Optimism for help me amass enough OP Goerli for testing, Etienne for feedback and support, and this prolonged bear market for inspiring me with a sense of responsibility to help bring more use cases to Ethereum.
+Last, I want to thank Josh from Box Domains (a must, if you want a [truly native blockchain domain name](https://www.my.box/)) for helping me get the domain, Michael from Optimism for help me amass enough OP Goerli ETH for testing, Etienne for feedback and support, and this prolonged bear market for inspiring me with a sense of responsibility to help bring more use cases to Ethereum.
