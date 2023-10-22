@@ -4,7 +4,7 @@ title:  "Slugs"
 date:   2023-10-22
 ---
 
-I'm excited to be launching the [Slugs protocol](https://github.com/bernatfp/slugs-protocol), a new kind of URL shortening service.
+I'm excited to be launching the [Slugs protocol](https://github.com/bernatfp/slugs-protocol), a new kind of URL shortening service. As part of this announcement, I'm also releasing the first frontend to interact with the protocol, available at [s.box](https://s.box).
 
 The Slugs protocol brings the concept of URL shorteners (think Bit.ly or TinyURL) onchain. This results in a unique kind of service. One that is open, decentralized, immutable and censorship-resistant. And it will keep running as long as the blockchain runs, resulting in greater permanence guarantees.
 
@@ -73,3 +73,5 @@ That said, minting functionality can be paused by the owner (me) in the event of
 While immutability is one of the design principles of the protocol, the Slugs dApp is very much malleable. If you have any feedback on how it can be improved, please do reach out! You can find my contact details in [the homepage](/). 
 
 That said, I hope that the protocol's embedded economic incentives motivate other dApp developers to build additional services on top of it, so the protocol can become more decentralized over time.
+
+Last, I want to thank Josh from Box Domains (a must, if you want a [truly native blockchain domain name](https://www.my.box/)) for helping me get the domain, Michael from Optimism for help me amass enough OP Goerli for testing, Etienne for feedback and support, and this prolonged bear market for inspiring me with a sense of responsibility to help bring more use cases to Ethereum.
