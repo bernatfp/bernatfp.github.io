@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "Slugs"
+date:   2023-10-22
+---
+
+I'm excited to be launching the [Slugs protocol](https://github.com/bernatfp/slugs-protocol), a new kind of URL shortening service. As part of this announcement, I'm also releasing the first frontend to interact with the protocol, available at [s.box](https://s.box).
+
+The Slugs protocol brings the concept of URL shorteners (think Bit.ly or TinyURL) onchain. This results in a unique kind of service. One that is open, decentralized, immutable and censorship-resistant. And it will keep running as long as the blockchain runs, resulting in greater permanence guarantees.
+
+The protocol is deployed on Optimism under [this address](https://optimistic.etherscan.io/address/0x48fbf0b7e6bdaa9d7452feb34507b2bddb148e54), allowing users to create slugs (*ie* short aliases that resolve to longer URLs) at negligible costs.
+
+Most importantly, the protocol has been built as a public good by default. However, this does not mean that all of its functionality is accessible at no cost. More on that later.
+
+## But why?
+
+By leaning on the open, composable and immutable nature of blockchains we can build a new kind of URL shortening service with these unique properties:
+
+- **Ownership.** Once you create a slug, it's truly yours, forever.
+- **NFTs.** Every slug is minted as an NFT, and thus transferable, tradeable, and overall composable with other protocols.
+- **User Experience.** No need for emails, social logins or CAPTCHAs. Just connect your wallet and mint.
+- **Skin in the game.** Get transparently rewarded for helping the protocol grow through referral revenue sharing.
+
+## How it works
+
+The protocol is a public good by default, allowing anyone to shorten URLs at no cost. 
+
+When a URL is registered, the contract will generate a random slug for it. Once a slug has been created, an NFT is issued to its creator. The NFT allows its owner to modify the slug's underlying URL.
+
+However, registering custom slugs is also possible. To disincentivize squatters from spamming the protocol with inorganic slug registrations, the protocol charges a one time fee for registering custom slugs. The fee is inversely proportional to the character length and constant at 8+ characters. We believe this approach will fend off spam, while allowing genuine protocol usage to thrive.
+
+In either case, you mint once, and then you keep your slug forever. Unlike other protocols, slug NFTs are permanent and never expire.
+
+### The Slugs NFT
+
+Each slug is represented as an NFT, rendered as an onchain generated SVG. The NFT displays the name of the slug, with its background and foreground colors being derived from the slug name.
+
+The NFT is perpetual, meaning its ownership never resets (*ie* no rent-seeking). And it can be transferred, which technically implies it can be traded, leased, etc.
+
+### Incentivizing builders and ambassadors
+
+Referrer fees are enshrined into the protocol as 50% of the mint fee, immediately credited to the referrer address supplied when calling the contract's mint function. Referrers can permissionlessly claim their fair share of proceeds by interacting with the protocol's contract. 
+
+We believe this model will incentivize:
+
+- **Developers,** to create novel products. See [the repository](https://github.com/bernatfp/slugs-protocol#description) for some ideas. 
+- **Ambassadors,** to spread the word and help evangelize the protocol. See the Referrals section below
+
+Of course, this only applies to custom slugs, since random slugs can be minted at no cost.
+
+## Slugs dApp
+
+As part of this launch I am releasing the first dApp that integrates the protocol. It supports the protocol's functionality of registering slugs, managing them, claiming referrer fees, and resolving slug requests. You can find it at [https://s.box](https://s.box).
+
+### Referrals
+
+In order to incentivize protocol growth, the [s.box](https://s.box) frontend gives a 100% kickback rate from protocol referrer fees to users that bring in protocol revenue through their referrals. 
+
+This is possible because the protocol supports referrals by design. The protocol's referral kickback rate is currently set at 50% of the mint fee, and the frontend passes the entirety of those earnings to referrers.
+
+You can create a referral link by appending `?referrer=<your-address>` to the Slugs dApp URL. For example, if peopl mint custom slugs via [https://s.box/?referrer=0xcb57c082893450408D432B5d0BC38def93b26040](https://s.box/?referrer=0xcb57c082893450408D432B5d0BC38def93b26040), which uses my address, then I would be entitled to any referral fees originated from this link.
+
+Side note: if you want to help Slugs grow and have your referral URL stand out from the rest, you can mint a short memorable slug that resolves to your referrer URL.
+
+## Next steps
+
+The primary goal of this project has been to bring the notion of URL shorteners onchain, whilst attempting to create a differentiated product leveraging the unique properties of blockchains, leaning on standards and borrowing ideas that take advantage of these properties in one way or another to create a new kind of product that hopefully provides value. Now that the protocol is live, the primary goal has been met.
+
+There are no active plans to improve the protocol. The protocol has been shipped as a single contract without any upgradeable provisions, meaning it is impossible to modify or extend without forking it. I believe this immutability aspect is key so the protocol can be entrusted by users and developers in order to flourish. 
+
+That said, minting functionality can be paused by the owner (me) in the event of a possible protocol upgrade in the long distant future. If an upgrade is ever made, it will ensure backwards compatibility, which is why I believe being able to pause minting actions is necessary.
+
+While immutability is one of the design principles of the protocol, the Slugs dApp is very much malleable. If you have any feedback on how it can be improved, please do reach out! You can find my contact details in [the homepage](/). 
+
+That said, I hope that the protocol's embedded economic incentives motivate other dApp developers to build additional services on top of it, so the protocol can become more decentralized over time.
+
+Last, I want to thank Josh from Box Domains (a must, if you want a [truly native blockchain domain name](https://www.my.box/)) for helping me get the domain, Michael from Optimism for help me amass enough OP Goerli ETH for testing, Etienne for feedback and support, and this prolonged bear market for inspiring me with a sense of responsibility to help bring more use cases to Ethereum.
