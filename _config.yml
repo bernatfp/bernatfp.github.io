@@ -21,7 +21,7 @@
 title: Bernat Fages
 email: contact@bernat.xyz
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a technologist obsessed with building interesting things, usually with other people and sometimes on my own.
+  I'm a technologist obsessed with building in crypto, usually with other people and sometimes on my own.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bernat.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: brnt
